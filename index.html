@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPORTS</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="/website/css/uicons-bold-rounded.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header1">
+                <div class="time">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.2em" viewBox="0 0 24 24">
+                        <g fill="none">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-width="2"
+                                d="M5.965 3.136a4 4 0 0 0-2.829 2.829m14.899-2.829a4 4 0 0 1 2.829 2.829" />
+                            <path fill="currentColor" fill-rule="evenodd"
+                                d="M12 20a8 8 0 1 0 0-16a8 8 0 0 0 0 16m1-12a1 1 0 1 0-2 0v3.75c0 .69.56 1.25 1.25 1.25H15a1 1 0 1 0 0-2h-2z"
+                                clip-rule="evenodd" />
+                        </g>
+                    </svg>
+                    <p id="koreanTime">
+
+                    </p>
+                    <!-- <script>document.write(new Date())</script> -->
+                </div>
+                <div class="logo">
+                    <img src="images/Logos.png" alt="Logo">
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li class="backWhite"><a href="">회원가입</a></li>
+                        <li class="backYellow"><a href="">비회원문의</a></li>
+                        <li><a href="">배팅내역</a></li>
+                        <li><a href="">출석부</a></li>
+                        <li><a href="">이벤트</a></li>
+                        <li><a href="">게시판</a></li>
+                        <li><a href="">쪽지</a></li>
+                        <li><a href="">환전</a></li>
+                        <li><a href="">충전</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="betweenHeaders">
+            <div class="header2">
+                <div class="menuBar">
+                    <ul>
+                        <li><a href="">스포츠</a></li>
+                        <li><a href="">플레이</a></li>
+                        <li><a href="">카지노</a></li>
+                        <li><a href="">롯게임</a></li>
+                        <li><a href="">런닝볼</a></li>
+                        <li><a href=""> 홀덤</a></li>
+                        <li><a href="">큰게임</a></li>
+                        <li><a href="">BET365</a></li>
+                        <li><a href="">니게임</a></li>
+                        <li><a href="">지사항</a></li>
+                        <li><a href="">기결과</a></li>
+                        <li><a href="">고객센터</a></li>
+                    </ul>
+                </div>
+                <div class="line">
+                    <p class="running-line">
+                        ⚠️ 계좌는 수시로 변경 되니 반드시 입금 하기전 1:1 문의로 안내 받으신 계좌로 입금해주시기 바랍니다. ⚠️
+                    </p>
+                </div>
+            </div>
+        </div>
+        <button id="open-button" onclick="openP()">></button>
+
+        <div class="popup" id="myForm">
+            <div class="popup1">
+                <a href=""><img src="images/popup.png" alt=""></a>
+            </div>
+            <div class="popup2">
+                <table>
+                    <tr>
+                        <td id="borderLeftTop"><a href="">스포츠</a></td>
+                        <td><a href="">인플레이</a></td>
+                        <td><a href="">카지노</a></td>
+                        <td id="borderRightTop"><a href="">슬롯게임</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">토큰게임</a></td>
+                        <td><a href="">BET365</a></td>
+                        <td><a href="">미니게임</a></td>
+                        <td><a href="">경기결과</a></td>
+                    </tr>
+                    <tr>
+                        <td id="borderLeftBottom"><a href="">이벤트</a></td>
+                        <td><a href="">출석부</a></td>
+                        <td><a href="">추천인</a></td>
+                        <td id="borderRightBottom"><a href="">고객센터</a></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="popup3">
+                <p class="popupTitle">games info</p>
+                <p>에볼루션</p>
+                <p>슬롯게임</p>
+                <p>홀덤</p>
+                <p>토큰게임</p>
+                <p>BET365</p>
+            </div>
+            <div class="popup4">
+                <p class="popupTitle">sports</p>
+                <p>축구</p>
+                <p>농구</p>
+                <p>야구</p>
+                <p>배구</p>
+                <p>아이스하키</p>
+            </div>
+            <div class="popup5">
+                <p class="popupTitle">popular leagues</p>
+                <p>러시아</p>
+                <p>베트남</p>
+                <p>이탈리아</p>
+                <p>멕시코</p>
+                <p>월드</p>
+            </div>
+        </div>
+        <div class="main">
+            <div class="main1">
+                <div class="slideshow-container">
+
+                    <div class="mySlides">
+                        <img src="images/image1.png" alt="">
+                    </div>
+
+                    <div class="mySlides ">
+                        <img src="images/image2.png" alt="">
+                    </div>
+
+                </div>
+                <br>
+
+                <div class="dots">
+                    <span class="dot1" onclick="currentSlide(1)"></span>
+                    <span class="dot2" onclick="currentSlide(2)"></span>
+                </div>
+            </div>
+            <div class="main2">
+                <div class="item">
+                    <img src="images/PlayNow1.png" alt="">
+                    <button class="PlayNowbtn">Play now</button>
+                </div>
+                <div class="item">
+                    <img src="images/PlayNow2.png" alt="">
+                    <button class="PlayNowbtn">Play now</button>
+                </div>
+                <div class="item">
+                    <img src="images/PlayNow3.png" alt="">
+                    <button class="PlayNowbtn">Play now</button>
+                </div>
+            </div>
+            <div class="main3">
+                <div class="item1">
+                    <img src="images/item1.png" alt="">
+                </div>
+                <div class="item2">
+                    <img src="images/item2.png" alt="">
+                </div>
+                <div class="item3">
+                    <img src="images/item3.png" alt="">
+                </div>
+                <div class="item4">
+                    <img src="images/item4.png" alt="">
+                </div>
+            </div>
+            <div class="main4">
+                <div class="modules">
+                    <div class="title">공지사항</div>
+
+                    <div class="info">
+
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <span style="color: #ffd800;">공지</span> 일반
+                                </div>
+                                <div class="swiper-slide">
+                                    <span style="color: #ffd800;">공지</span> 공지
+                                </div>
+                                <div class="swiper-slide">
+                                    <span style="color: #ffd800;">공지</span> ㅅㄷㄴㅅ
+                                </div>
+                                <div class="swiper-slide">
+                                    <span style="color: #ffd800;">공지</span> wet
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="modules">
+                    <div class="title"> 이벤트</div>
+                    <div class="info">
+                        <p> <span style="color: #ffd800;">이벤트</span> sssssssssssssssss</p>
+                    </div>
+                </div>
+                <div class="modules">
+                    <div class="title">실시간 입금현황</div>
+                    <div class="info">
+                        <p>10-17 <span style="color: #ffd800;">입금</span> 1,000 tks****</p>
+                        <p>10-17 <span style="color: #ffd800;">입금</span> 1,000 tks****</p>
+                        <p>10-17 <span style="color: #ffd800;">입금</span> 1,000 tks****</p>
+                        <p>10-17 <span style="color: #ffd800;">입금</span> 1,000 tks****</p>
+                        <p>10-17 <span style="color: #ffd800;">입금</span> 1,000 tks****</p>
+                    </div>
+                </div>
+                <div class="modules">
+                    <div class="title">실시간 출금현황</div>
+                    <div class="info">
+                        <p>10-17 <span style="color: #ffd800;">입금</span> 1,000, 000tks****</p>
+                        <p>10-17 <span style="color: #ffd800;">입금</span> 1,000, 000tks****</p>
+                        <p>10-17 <span style="color: #ffd800;">입금</span> 1,000, 000tks****</p>
+                        <p>10-17 <span style="color: #ffd800;">입금</span> 1,000, 000tks****</p>
+                        <p>10-17 <span style="color: #ffd800;">입금</span> 1,000, 000tks****</p>
+                    </div>
+                </div>
+            </div>
+            <div class="main5">
+                <div>
+                    <img src="images/footer.png" alt="">
+                </div>
+                <br>
+                <br>
+                <p>Copyright © <span style="color: #ffd800;">골든블루</span>. All Rights Reserved.</p>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="login">
+                <p>MEMBER LOGIN</p>
+                <form action="">
+                    <div class="inputs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="0.8em" height="1.2em" viewBox="0 0 512 512">
+                            <path fill="#4f4f4f"
+                                d="M332.64 64.58C313.18 43.57 286 32 256 32c-30.16 0-57.43 11.5-76.8 32.38c-19.58 21.11-29.12 49.8-26.88 80.78C156.76 206.28 203.27 256 256 256s99.16-49.71 103.67-110.82c2.27-30.7-7.33-59.33-27.03-80.6M432 480H80a31 31 0 0 1-24.2-11.13c-6.5-7.77-9.12-18.38-7.18-29.11C57.06 392.94 83.4 353.61 124.8 326c36.78-24.51 83.37-38 131.2-38s94.42 13.5 131.2 38c41.4 27.6 67.74 66.93 76.18 113.75c1.94 10.73-.68 21.34-7.18 29.11A31 31 0 0 1 432 480" />
+                        </svg>
+                        <input type="text" placeholder="아이디"><br>
+                    </div>
+                    <div class="inputs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="0.8em" height="1.2em" viewBox="0 0 24 24">
+                            <path fill="#4f4f4f"
+                                d="M6 22q-.825 0-1.412-.587T4 20V10q0-.825.588-1.412T6 8h1V6q0-2.075 1.463-3.537T12 1t3.538 1.463T17 6v2h1q.825 0 1.413.588T20 10v10q0 .825-.587 1.413T18 22zm6-5q.825 0 1.413-.587T14 15t-.587-1.412T12 13t-1.412.588T10 15t.588 1.413T12 17M9 8h6V6q0-1.25-.875-2.125T12 3t-2.125.875T9 6z" />
+                        </svg>
+                        <input type="password" placeholder="패스워드"><br>
+                    </div>
+                    <input type="button" value="Login">
+                </form>
+            </div>
+            <div class="bettingSlip">
+                <p>BETTING SLIP</p>
+                <div class="rightText">
+                    <p>리오닝 플라잉 레오파즈 <span style="color: red;">VS</span> 렌진 골드 라이온스</p>
+                    <p>원정승 렌진 골드 라이온스 2.69</p>
+                </div>
+                <div class="rightText">
+                    <p>일본 유타이티드 <span style="color: red;">VS</span> 케엔스 타이팬스</p>
+                    <p>원정승 케엔스 타이펜스 2.69</p>
+                </div>
+                <div class="rightText">
+                    <p>Macathur FC <span style="color: red;">VS</span> 퍼시 클로리</p>
+                    <p>원정승 퍼시 글로리 2.69</p>
+                </div>
+                <div class="rightText">
+                    <p>보너스 배당 1.04</p>
+                </div>
+                <div class="betting">
+                    <div class="total">
+                        <div onclick="clearNum()">
+                            <img onclick="clearNum()" src="images/refreshButton.png" alt="">
+                        </div>
+                        <div>
+                            <span id="result">0</span>
+                        </div>
+                    </div>
+                    <div class="num1" onclick="addnum(5000)">5.000</div>
+                    <div class="num2" onclick="addnum(10000)">10.000</div>
+                    <div class="num3" onclick="addnum(50000)">50.000</div>
+                    <div class="num4" onclick="addnum(100000)">100.000</div>
+                    <div class="num5" onclick="addnum(500000)">500.000</div>
+                    <div class="num6">MAX</div>
+                    <div class="bettingBtn">BETTING</div>
+                </div>
+                <div class="number">
+                    <p>베팅폴더0</p>
+                    <p>배당률 합계</p>
+                    <p>적중 예상 금액</p>
+                </div>
+            </div>
+            <div class="links">
+                <div class="link1">
+                    <img src="images/link1.png" alt="">
+                    <p>
+                        카카오톡 test119
+                    </p>
+                </div>
+                <div class="link2">
+                    <img src="images/link2.png" alt="">
+                    <p>
+                        텔레그램
+                    </p>
+                </div>
+                <div class="link3">
+                    <img src="images/link3.png" alt="">
+                    <p>
+                        텔레그램 골든블루.com
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
