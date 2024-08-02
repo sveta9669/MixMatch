@@ -18,7 +18,7 @@ body {
     grid-template-columns: 20% 20% 20% 20% 20%;
 }
 
-
+/* Header */
 .sidebar {
     height: 78vh;
     overflow-y: auto;
@@ -108,7 +108,8 @@ body {
     padding: 3px 5px;
     background-color: white;
 }
-.backWhite a{
+
+.backWhite a {
     color: black !important;
 }
 

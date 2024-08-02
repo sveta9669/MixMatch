@@ -47,7 +47,7 @@ function updateSeoulTime() {
 
     const date = `${seoulTime.find(part => part.type === 'year').value}-${seoulTime.find(part => part.type === 'month').value}-${seoulTime.find(part => part.type === 'day').value}`;
     const time = `${seoulTime.find(part => part.type === 'hour').value}:${seoulTime.find(part => part.type === 'minute').value}:${seoulTime.find(part => part.type === 'second').value}`;
-    
+
     document.getElementById('koreanTime').innerText = `GMT+9 ${date} ${time}`;
 }
 
@@ -56,22 +56,22 @@ updateSeoulTime();
 
 
 
-function addnum(num){
+function addnum(num) {
     let result = document.getElementById('result')
     let number = parseInt(result.innerText)
-    number+=num
-    result.innerText=number
+    number += num
+    result.innerText = number
 }
 
-function clearNum(){
-    document.getElementById('result').innerText=0
+function clearNum() {
+    document.getElementById('result').innerText = 0
 
 }
 
-var swiper = new Swiper(".mySwiper", { 
-    direction: "vertical", 
-    pagination: { 
-      el: ".swiper-pagination", 
-      clickable: true, 
-    }, 
-  }); 
+var swiper = new Swiper(".mySwiper", {
+    direction: "vertical",
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+}); 
